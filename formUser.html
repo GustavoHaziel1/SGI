@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Form</title>
+</head>
+<body>
+    <form action="enviar_dados" method="post">
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome" id="nome" placeholder="Ex: João Gabriel Silva">
+        <br>
+
+        <label for="matricula">Matrícula:</label>
+        <input type="number" name="matricula" id="matricula" placeholder="Ex: 2026123456">
+        <br>
+    
+        <label for="email">Email Institucional:</label>
+        <input type="email" name="email" id="email" placeholder="Ex: jgs@aluno.ifal.edu.br">
+        <br>
+
+        <label for="periodo">Período atual:</label>
+        <input type="text" name="periodo" id="periodo" placeholder="Ex: 1º ano">
+        <br>
+
+        <label for="turma">Turma:</label>
+        <input type="text" name="turma" id="turma" placeholder="Ex: 421-A">
+        <br>
+
+        <label for="arquivos">Selecione o arquivo (Foto ou Documento)</label>
+        <br>
+        <input type="file" name="arquivos" id="arquivos" accept="application/pdf, application/msword, image/*">
+        <br>
+
+        <button>Enviar</button>
+
+    </form>
+</body>
+</html>
