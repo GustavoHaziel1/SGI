@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Form</title>
+    <link rel = 'stylesheet' href="css/styles.css">
 </head>
 <body>
     <form action="enviar_dados" method="post">
 
         <label for="nome">Nome completo:</label>
-        <input type="text" name="nome" id="nome" placeholder="Ex: João Gabriel Silva">
+        <input type="text" name="nome" id="nome" placeholder="Ex: João Gabriel Silva" required>
         <br>
 
         <label for="matricula">Matrícula:</label>
-        <input type="number" name="matricula" id="matricula" placeholder="Ex: 2026123456">
+        <input type="number" name="matricula" id="matricula" placeholder="Ex: 2026123456" required>
         <br>
     
         <label for="email">Email Institucional:</label>
-        <input type="email" name="email" id="email" placeholder="Ex: jgs@aluno.ifal.edu.br">
+        <input type="email" name="email" id="email" placeholder="Ex: jgs@aluno.ifal.edu.br" required>
         <br>
 
         <label for="periodo">Período atual:</label>
-        <input type="text" name="periodo" id="periodo" placeholder="Ex: 1º ano">
+        <input type="text" name="periodo" id="periodo" placeholder="Ex: 1º ano" required>
         <br>
 
         <label for="turma">Turma:</label>
-        <input type="text" name="turma" id="turma" placeholder="Ex: 421-A">
+        <input type="text" name="turma" id="turma" placeholder="Ex: 421-A" required>
+        <br>
+
+        <label for="folhas">Quantidade de folhas (5 por pessoa na semana)</label>
+        <input type="number" maxlength="5" placeholder="ATÉ 5!" required> 
         <br>
 
         <label for="arquivos">Selecione o arquivo (Foto ou Documento)</label>
