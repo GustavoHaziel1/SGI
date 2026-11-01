@@ -11,8 +11,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 require('dotenv').config()
+app.use(express.static('public'));
 
 app.get ('/', (req, res) =>{
     res.render('formUser.ejs')
