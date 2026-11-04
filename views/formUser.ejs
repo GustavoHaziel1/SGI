@@ -7,7 +7,7 @@
     <link rel = 'stylesheet' href='/css/styles.css'>
 </head>
 <body>
-    <form action="envia" method="post" enctype="multipart/form-data">
+    <form action="/envia" method="post" enctype="multipart/form-data">
 
         <label for="nome">Nome completo:</label>
         <input type="text" name="nome" id="nome" placeholder="Ex: João Gabriel Silva" required>
@@ -29,13 +29,13 @@
         <input type="text" name="turma" id="turma" placeholder="Ex: 421-A" required>
         <br>
 
-        <label for="folhas">Quantidade de folhas (5 por pessoa na semana)</label>
-        <input type="number" maxlength="5" placeholder="ATÉ 5!" required> 
+        <label for="quantidade">Quantidade de folhas (5 por pessoa na semana)</label>
+        <input type="number" name="quantidade" max="5" maxlength="1" placeholder="ATÉ 5!" required> 
         <br>
 
-        <label for="arquivos">Selecione o arquivo (Foto ou Documento)</label>
+        <label for="arquivo">Selecione o arquivo (Foto ou Documento)</label>
         <br>
-        <input type="file" name="arquivos" id="arquivos" accept="application/pdf, application/msword, image/*">
+        <input type="file" name="arquivo" id="arquivo" accept="application/pdf, application/msword, image/*">
         <br>
 
         <button>Enviar</button>

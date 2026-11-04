@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 
 // 2. Rota POST para receber o formulário e salvar no Banco de Dados
 // Obs: O nome 'arquivo' em upload.single('arquivo') deve ser o mesmo do atributo name do input do arquivo no HTML.
-app.post('/solicitar', upload.single('arquivo'), async (req, res) => {
+app.post('/envia', upload.single('arquivo'), async (req, res) => {
     try {
         // Captura os dados enviados pelos campos do formulário
         const { nome, matricula, email, periodo, turma, quantidade } = req.body;
