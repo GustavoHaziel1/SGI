@@ -30,10 +30,16 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
-// Rota Principal (Renderiza o formulário)
+// Rotas
 app.get('/', (req, res) => {
-    res.render('formUser.ejs');
+    res.render('login.ejs')
 });
+app.get('/registro',(req, res) =>{
+    res.render('registro.ejs')
+})
+app.get('/formUser', (req,res) =>{
+    res.render('formUser.ejs');
+})
 
 // 2. Rota POST para receber o formulário e salvar no Banco de Dados
 // Obs: O nome 'arquivo' em upload.single('arquivo') deve ser o mesmo do atributo name do input do arquivo no HTML.
