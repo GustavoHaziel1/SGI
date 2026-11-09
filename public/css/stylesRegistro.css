@@ -1,0 +1,117 @@
+/* ===== PALETA DE CORES ===== */
+:root {
+    --color1: #457a39;
+    --color2: #659a57;
+    --color3: #84ba75;
+    --color4: #a4db93;
+    --text: #263526;
+    --muted: #647564;
+    --white: #ffffff;
+    --input-bg: #f8fcf6;
+    --border: #cbdcc5;
+}
+
+/* ===== TELAS DE AUTENTICAÇÃO (LOGIN E REGISTRO) ===== */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: var(--input-bg);
+}
+
+.auth-card {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 420px;
+    padding: 35px 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(38, 53, 38, 0.06);
+}
+
+.auth-card h2 {
+    color: var(--color1);
+    font-size: 24px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.auth-card .subtitle {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color1);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    font-size: 14px;
+    color: var(--text);
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-group input::placeholder {
+    color: var(--color3);
+}
+
+.input-group input:focus {
+    border-color: var(--color2);
+    background-color: var(--white);
+    box-shadow: 0 0 0 3px rgba(101, 154, 87, 0.15);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color1);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--color2);
+}
+
+.auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.auth-footer a {
+    color: var(--color1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    color: var(--color2);
+    text-decoration: underline;
+}
