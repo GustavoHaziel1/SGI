@@ -30,7 +30,7 @@ function verifyToken(req, res, next) {
     const token = req.cookies.token;
 
     if (!token) {
-        return res.redirect('/login');
+        return res.redirect('/');
     }
 
     try {
@@ -39,7 +39,7 @@ function verifyToken(req, res, next) {
         next();
     } catch (err) {
         res.clearCookie('token');
-        return res.redirect('/login');
+        return res.redirect('/');
     }
 }
 
@@ -108,7 +108,7 @@ app.post('/register', async (req, res) => {
         // 2. Salvar no banco de dados (exemplo simplificado)
         // await db.query('INSERT INTO users (email, password) VALUES (?, ?)', [email, hashedPassword]);
 
-        res.redirect('/login');
+        res.redirect('/');
     } catch (err) {
         res.status(500).send('Erro ao cadastrar usuário');
     }
@@ -135,7 +135,7 @@ app.post('/login', async (req, res) => {
 //Rota de Logout
 app.get('/logout', (req, res) => {
     res.clearCookie('token');
-    res.redirect('/login');
+    res.redirect('/');
 });
 
 
