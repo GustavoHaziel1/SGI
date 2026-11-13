@@ -129,7 +129,7 @@ app.post('/login', async (req, res) => {
         maxAge: 3600000
     });
 
-    res.redirect('/dashboard');
+    res.redirect('/formUser');
 });
 
 //Rota de Logout
